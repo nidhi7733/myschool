@@ -1,0 +1,233 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:50px;
+}
+/* Navigation Bar */
+/* Navigation Bar : Logo and Image */
+#logo{
+    margin: 3px 5px;
+    }
+#logo img{
+    height: 50px;
+    margin: 3px 4px;
+    align-items: center;
+}
+/* Navigation Bar : List Styling */
+#navbar{
+    position: relative;
+    display:flex;
+    align-items: center;
+  
+}
+#navbar::before{
+    content: "";
+    background-color: green;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.schoolName{
+    display: inline-block;
+     
+}
+.schoolName a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.schoolName a:hover{
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3px 22px;
+}
+
+#navbar ul{
+    display: flex;
+    margin-left: auto;   
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;    
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 20px;
+    height: 590px;
+    justify-content: center;
+    align-items: center;
+}
+#home:before{
+    content: "";
+    position: absolute;
+    background:url('../bg_school.jpg') no-repeat center center/cover;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;  
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color:blue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+/* Services Section */
+#services{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+#services .box{
+    position: absolute
+    display: flexbox;
+    border: 2px solid brown;
+    padding: 6px;
+    margin: 3px 12px;
+    border-radius: 28px;
+    background: rgb(253, 206, 158);
+    font-family: 'Bree Serif', serif;
+}
+#services .box img{
+    align-items: center;
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    text-align: justify; 
+}
+/* Client Section */
+.socialMedia-section{
+   position: relative;
+}
+.socialMedia-section::before{
+   content: "";
+   position: absolute;
+   background: url('../bg.jpg');
+   width: 100%;
+   height: 70%;
+   z-index: -1;
+   opacity: 0.3;
+}
+
+#socialMedias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialMedia-item{
+    padding: 34px;
+}
+#socialMedias img{
+    height: 124px;
+    padding: 3px 35px;
+}
+
+/* Contact Section */
+#contact{
+position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../images.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.0rem;
+
+}
+footer{
+    background: black;
+    color: white;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 25px;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.btn{
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: 2px solid white;
+    background-color: green;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.submit{
+    display: flex;
+    background-color: rgb(4, 226, 60);
+    font-size: 2rem;
+    padding: 6px 15px;
+    border: white;
+    border-radius: 28px;
+}
+.submit a{
+    color: white;
+    text-decoration: none;
+}
+
